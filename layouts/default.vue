@@ -67,6 +67,11 @@ export default {
           title: 'Inspire',
           icon: 'lightbulb',
           to: { name: 'inspire' }
+        },
+        {
+          title: 'About Me',
+          icon: 'user',
+          to: { name: 'about-me' }
         }
       ]
     }
