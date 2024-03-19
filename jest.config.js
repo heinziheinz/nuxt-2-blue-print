@@ -20,5 +20,8 @@ module.exports = {
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue'
   ],
-  testEnvironment: 'jsdom'
+  testEnvironment: 'jsdom',
+  transformIgnorePatterns: [
+    "/node_modules/(?!axios)"
+  ]
 }
