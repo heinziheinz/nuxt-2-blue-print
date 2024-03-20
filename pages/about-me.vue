@@ -13,7 +13,7 @@
   </template>
   
   <script lang="ts">
-  import Vue , { defineComponent } from 'vue'
+  import Vue from 'vue'
   import Person from '~/type/Person';
   import axios from 'axios';
   export default  Vue.extend({

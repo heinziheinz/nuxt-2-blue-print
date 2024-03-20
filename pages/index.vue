@@ -47,6 +47,18 @@ export default {
   name: 'IndexPage',
   components: {
     Card
+  }, 
+  head() {
+    return {
+      title: 'Home',
+      meta: [
+        {
+          hid: 'description',
+          name: 'check out stuff',
+          content: 'My first Nuxt.js project!'
+        }
+      ]
+    }
   }
 }
 </script>
