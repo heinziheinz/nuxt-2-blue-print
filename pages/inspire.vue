@@ -24,6 +24,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+// import Buefy from 'buefy';
 export default Vue.extend({
   name: 'Inspire', 
   data() {
@@ -36,8 +37,9 @@ export default Vue.extend({
       this.showData = name;
     },
     clickMe() {
-      (this as any).$buefy.notification.open('Clicked!!')
+      // (this as any).$buefy.notification.open('Clicked!!')
+      this.$buefy.notification.open('Clicked!!')
             }
-  }
+  },
 });
 </script>
