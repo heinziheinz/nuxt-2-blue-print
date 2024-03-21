@@ -25,15 +25,15 @@
         swapiAPIArray: [] as Person[],
       }
     },
-    mounted() {
-      console.log('Component mounted.')
-      axios.get("https://swapi.dev/api/people/").then((response) => {
+    async fetch() {
+    try {
+      const response = await axios.get("https://swapi.dev/api/people/");
       this.swapiAPIArray = response.data.results;
-      console.log(this.swapiAPIArray);
-      }).catch((error) => {
-        console.log(error);
-      });
+    } catch (error) {
+      console.error(error);
     }
+  }
   });
   </script>
+
   

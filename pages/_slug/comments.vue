@@ -1,21 +1,22 @@
 <template>
     <div>
-      <h1>Personal Info for ID: {{ id }}</h1>
-      <p>{{ $route.params.id }}</p>
+      <h1>Page for Slug: {{ slug }} in the middle</h1>
     </div>
   </template>
   
   <script lang="ts">
   import Vue from 'vue';
+  import { Context } from '@nuxt/types';
+  
   export default Vue.extend({
     data() {
       return {
-       secondId:this.$route.params.id,
+        slug: ''
       }
     },
     asyncData({ params }) {
-      // params.id will be available here
-      return { id: params.id }
+      // context.params.slug will be available here
+      return { slug: params.slug }
     }
   });
   </script>

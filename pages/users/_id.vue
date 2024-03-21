@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>Personal Info for ID: {{ id }}</h1>
+      <h1>user ID: {{ id }}</h1>
       <p>{{ $route.params.id }}</p>
     </div>
   </template>

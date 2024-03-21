@@ -1,5 +1,10 @@
 <template>
-  <section class="section">
+  <section class="b-tooltips">
+    <b-tooltip label="Tooltip right"
+            position="is-right">
+            <b-button label="Right" type="is-dark" />
+        </b-tooltip>
+        
     <h2 class="title is-3 has-text-grey">
       "Just start  <b-icon
         icon="rocket"
@@ -11,11 +16,28 @@
         Antério Vieira
       </a>
     </h3>
+    <button @click="addName('Hallo Vue')">This is Vue</button>
+    <b-button type="is-primary" @click="clickMe">Click Me</b-button>
+    <h3>{{ showData }}</h3>
   </section>
 </template>
 
-<script>
-export default {
-  name: 'InspirePage'
-}
+<script lang="ts">
+import Vue from 'vue';
+export default Vue.extend({
+  name: 'Inspire', 
+  data() {
+    return {
+      showData:'',
+    }
+  },
+  methods:{
+    addName( name:string ){
+      this.showData = name;
+    },
+    clickMe() {
+      (this as any).$buefy.notification.open('Clicked!!')
+            }
+  }
+});
 </script>
