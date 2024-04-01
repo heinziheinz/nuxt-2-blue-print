@@ -31,7 +31,11 @@
   },
   "include": [
     "**/*.ts",
-    "**/*.vue"
+    "**/*.vue",
+    "test/PersonalPage.spec.js",
+    "test/Nav.spec.js",
+    "test/Inspire.spec.js",
+    "test/AboutMePage.spec.js"
   ],
   "exclude": [
     "node_modules",
